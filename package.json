@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "dalai": "^0.3.1",
+    "dotenv": "^16.0.3",
+    "node-telegram-bot-api": "^0.61.0",
+    "request": "^2.88.2"
+  }
+}

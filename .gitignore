@@ -1,0 +1,3 @@
+# add standart git ignore:  
+node_modules/
+.env
