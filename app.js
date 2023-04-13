@@ -44,10 +44,13 @@ bot.on('message', (msg) => {
    if (userText.indexOf("/imagine") !== -1) {
       try {
          console.log(sdwebui)
+         console.log((userText).slice(8))
          sdwebui.default({apiUrl:"http://127.0.0.1:7860"}).
             txt2img({
-               prompt: userText,
-               steps: 70,
+               prompt: (userText).slice(8),
+               steps: 60,
+               cfgScale: 12,
+               
 
             })
             .then(({ images }) => {
@@ -65,6 +68,7 @@ bot.on('message', (msg) => {
           
         return
       }
+      //return
 
 
    // Check if message queue exists for the user and create new if not
